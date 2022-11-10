@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_form</title>
+</head>
+<body>
+    <form method="post" action="action.php">
+        <table border="1">
+          <caption>Registration form</caption>
+            <tr>
+                <td>first name:<input name="firstname" type="text" size="20" maxlength="25" placeholder="firstname"/></td>
+            </tr>
+            <tr>
+                <td>second name:<input name="secondname" type="text" size="20" maxlength="25"/></td>
+            </tr>
+            <tr>
+                <td>Telephone:<input name="telephone" type="text" size="20" maxlength="25"/></td>
+            </tr>
+            <tr>
+                <td>Email:<input name="email" type="text" size="20" maxlength="25"/></td>
+            </tr>
+            <tr>
+                <td>Country:<input name="country" type="text" size="20" maxlength="20"/></td>
+            </tr>
+            <tr>
+                <td>Branch:
+                    <select name="branch" id="branch">
+                        <option>Thika</option>
+                        <option>Nairobi</option>
+                        <option>Mombasa</option>
+                        <option>Tanzania</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"/></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="clear"/></td>
+            </tr>
+        </table>
+
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        
+        .registration_header {
+            text-align: center;
+            background-color: orange;
+            width: 315px;
+            height: 30px;
+            margin: auto;
+            margin-bottom: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .registration_header:hover {
+            color: blue;
+        }
+       
+        .form_style {
+            display: grid;
+            width: 20em;
+            height: 20em;
+            gap: 15px;
+            margin: auto;
+            cursor: pointer;   
+        }
+        select {
+            border-radius: 10px;
+            color: black;
+        }
+        select:hover {
+            background-color: rgb(171, 218, 111);
+        }
+        select > option {
+            background-color: gold;
+        }
+        input {
+            border-radius: 10px;
+            box-shadow: black;
+        }
+        input::placeholder {
+            color: black;
+        }
+        input:focus {
+            background-color: darkorange;
+            color: black;
+            border-bottom: 5px solid black;
+            
+        }
+        input:hover {
+            background-color: rgb(171, 218, 111);
+        }
+        .registration_btns {
+            text-decoration: none;
+            gap: 100px;
+            display: flex;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+        }
+        .login_link {
+            margin-top: 10px;
+        }
+        button {
+            width: 80px;
+            height: 20px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="">
+        <div class="container">
+            <div class="registration_header">
+                <h3>THEE JOHNSON'S HOME DECOR</h3>
+            </div>
+            <div class="form_style">
+                <input type="text" name="firstname" placeholder="First name" required/>
+          
+                <input type="text" name="secondname" placeholder="Second name" required/>
+                
+                <input type="text" name="phonenumber" placeholder="Phone number" required/>
+            
+                <input type="email" name="email" placeholder="Email" required aria-describedby="emailHelp"/>
+                <span id="emailHelp" style="display: none;">please enter valid email address</span>
+               
+                <input type="text" name="country" placeholder="Country" required/>
+               
+                <select name="branch" id="branch">
+                    <option>Nairobi</option>
+                    <option>Kisumu</option>
+                    <option>Mombasa</option>
+                    <option>Nakuru</option>
+                    <option>Eldoret</option>
+                </select>
+                <div class="registration_btns">
+                    <button type="submit" value="submit">Register</button>
+                    
+                </div>
+            </div>
+        </div>
+    </form>   
+</body>
+</html>
